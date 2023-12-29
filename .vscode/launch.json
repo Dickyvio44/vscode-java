@@ -3,6 +3,18 @@
 	"version": "0.1.0",
 	"configurations": [
 		{
+			"type": "cobol",
+			"request": "attach",
+			"name": "COBOL (native): Attach to process",
+			"processId": "${command:pickProcess}"
+		},
+		{
+			"name": "Arm Debug",
+			"type": "arm-debug",
+			"request": "attach",
+			"address": "Websocket (ws://<host>:<port>) or socket (<host>:<port>) to connect to"
+		},
+		{
 			"name": "Launch Extension",
 			"type": "extensionHost",
 			"request": "launch",
